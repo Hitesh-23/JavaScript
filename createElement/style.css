@@ -41,3 +41,8 @@ button:active{
 h1{
     white-space: nowrap;
 }
+
+
+body{
+    overflow: hidden;
+}
