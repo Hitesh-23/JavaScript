@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+}
+
+.piano{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn{
+    height: 150px;
+    width: 30px;
+    background-color: grey;
+    border-radius: 5px;
+    border: 1px solid rgb(95, 95, 95);
+
+}
+
+
+.piano div{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 10px;
+    color: white;
+}
+
+
+
+.piano div:hover{
+    transition: all ease 0.4s;
+    background-color: rgb(49, 48, 48);
+}
+
+.piano div:active{
+    scale: 1.2;
+    background-color: yellow;
+    transition: 0.1s;
+}
+
