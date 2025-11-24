@@ -64,47 +64,103 @@ let p = document.querySelector('p')
 
 
 
-let form = document.querySelector('form')
-let input = document.querySelectorAll('input')
-let main = document.querySelector(".main")
+// let form = document.querySelector('form')
+// let input = document.querySelectorAll('input')
+// let main = document.querySelector(".main")
 
-form.addEventListener('submit',function(dets){
-    dets.preventDefault()
+// form.addEventListener('submit',function(dets){
+//     dets.preventDefault()
 
-    let card = document.createElement('div')
-    card.classList.add('card')
+//     let card = document.createElement('div')
+//     card.classList.add('card')
 
 
-    let profile = document.createElement('div')
-    profile.classList.add('profile')
+//     let profile = document.createElement('div')
+//     profile.classList.add('profile')
 
-    let img = document.createElement('img')
-    img.setAttribute('src',input[0].value)
+//     let img = document.createElement('img')
+//     img.setAttribute('src',input[0].value)
 
-    let h3 = document.createElement('h3');
-    h3.textContent = input[1].value
-    let h5 = document.createElement('h5');
-    h5.textContent = input[2].value
-    let p = document.createElement('p');
-    p.textContent = input[3].value
+//     let h3 = document.createElement('h3');
+//     h3.textContent = input[1].value
+//     let h5 = document.createElement('h5');
+//     h5.textContent = input[2].value
+//     let p = document.createElement('p');
+//     p.textContent = input[3].value
   
     
 
-    profile.appendChild(img)
-    card.appendChild(profile)
+//     profile.appendChild(img)
+//     card.appendChild(profile)
 
-    card.appendChild(h3)
-    card.appendChild(h5)
-    card.appendChild(p)
-
-
-    main.appendChild(card)
+//     card.appendChild(h3)
+//     card.appendChild(h5)
+//     card.appendChild(p)
 
 
-    input.forEach(function(ele){
-        if(ele.type != "submit"){
-            ele.value = ''
-        }
-    })
+//     main.appendChild(card)
+
+
+//     input.forEach(function(ele){
+//         if(ele.type != "submit"){
+//             ele.value = ''
+//         }
+//     })
+// })
+
+let abcd = document.querySelector('#abcd');
+
+// let body = document.querySelector('body')
+
+// body.addEventListener('keydown',function(dets){
+//     console.log(dets)
+
+// })
+
+// abcd.addEventListener('mouseover',function(){
+//     abcd.style.backgroundColor = 'yellow'
+// })
+
+// abcd.addEventListener('mouseout',function(){
+//     abcd.style.backgroundColor = 'crimson'
+// })
+
+
+// window.addEventListener('mousemove',function(dets){
+//     console.log(dets.clientX, dets.clientY);
+//     abcd.style.position = 'absolute';
+//     abcd.style.top = dets.clientY + "px"
+//     abcd.style.left = dets.clientX + 'px'
+//     abcd.style.transform = "translate(-50%, -50%)";
+
+// })
+
+
+
+// let ul = document.querySelector('ul');
+
+// ul.addEventListener('click',function(dets){
+//     console.log(dets.target)
+//     dets.target.classList.toggle('lis')
+// })\
+
+
+
+let inp = document.querySelector('input');
+
+let span = document.querySelector('#myH1 span');
+
+inp.addEventListener('input', function(dets){
+    let left = 20 - inp.value.length;
+    span.textContent = left
+    
+    if(left < 0){
+        span.style.color = 'red'
+    }else{
+        span.style.color = 'black'     
+    }
 })
+
+
+
 
